@@ -62,7 +62,7 @@ Ao usar os comandos acima, as mudanças são salvas (gravadas) apenas na sua má
  - É importante que qualquer mudança no repositório seja salva/gravada (ver etapa 01) antes da sincronização com o repositório remoto (etapa 02). 
  - Recomendamos que o `git pull` sempre ser executado antes de `git push` para evitar conflitos ao mesclar as modificações do repositório local com o remoto.
 
-# Criação do ambiente virtual
+## Criação do ambiente virtual
 
 Vá a raiz do repositório. Em geral, a raiz do repositório é a pasta com o nome do projeto, nesse caso `thesisbr`
 
