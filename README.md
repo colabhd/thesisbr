@@ -83,15 +83,15 @@ conda config --set pip_interop_enabled True && conda config --set env_prompt '({
 
 ```
 thesisbr/
- ├── thesisbr/          # pacote python
- ├── notebooks/         # exemplos
- ├── app/               # NiceGUI
+ ├── app/      
  ├── docs/              # Starlight
  │    ├── public/       
  │    ├── src/content/  
  │    │    └── docs/    # páginas de documentação
  │    └── astro.config.mjs
  ├── package.json
+ ├── notebooks/         # exemplos
+ ├── scrapers/         
  ├── README.md
  └── ...
 
