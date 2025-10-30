@@ -1,2 +1,3 @@
-# thesisbr
-Catálogo de Teses e Dissertações da Capes
+# ThesisBR – Brazilian Theses & Dissertations
+
+- Catálogo de Teses e Dissertações da Capes
