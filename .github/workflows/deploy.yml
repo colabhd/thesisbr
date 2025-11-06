@@ -1,17 +1,15 @@
-name: Deploy Starlight to GitHub Pages
+name: Deploy Starlight (docs/) to GitHub Pages
 
 on:
   push:
     branches: ["main"]
   workflow_dispatch:
 
-# Permissões exigidas pelo Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Evita deploys concorrentes
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -19,22 +17,36 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: docs   # <<< o projeto Astro/Starlight vive aqui
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
+
+      # Se você usa pnpm, troque os dois passos abaixo por:
+      # - uses: pnpm/action-setup@v4
+      #   with: { version: 9 }
+      # - run: pnpm install --frozen-lockfile
+      # - run: pnpm build
+
       - name: Install deps
         run: npm ci
       - name: Build
         run: npm run build
+        # Certifique-se que seu package.json tem:
+        # "build": "astro build"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: docs/dist
 
   deploy:
     runs-on: ubuntu-latest
