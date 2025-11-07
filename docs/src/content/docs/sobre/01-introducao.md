@@ -1,9 +1,10 @@
 ---
-title: Teste Guide
+title: Introdução
 description: A guide in my new Starlight docs site.
-slug: 'contribuindo/contato'
+slug: 'sobre/introducao'
 sidebar:
-  order: 7
+  order: 1
+
 ---
 
 Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.

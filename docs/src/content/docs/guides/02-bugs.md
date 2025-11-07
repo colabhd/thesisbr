@@ -1,9 +1,10 @@
 ---
-title: Teste Guide
+title: Como reportar Bugs
 description: A guide in my new Starlight docs site.
-slug: 'contribuindo/contato'
+slug: 'contribuindo/bugs'
 sidebar:
-  order: 7
+  order: 2
+
 ---
 
 Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.

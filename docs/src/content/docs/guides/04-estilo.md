@@ -1,9 +1,10 @@
 ---
-title: Teste Guide
+title: Guia de estilo (padronização das contribuições)
 description: A guide in my new Starlight docs site.
-slug: 'contribuindo/contato'
+slug: 'contribuindo/estilo'
 sidebar:
-  order: 7
+  order: 4
+
 ---
 
 Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
