@@ -14,27 +14,18 @@ Legenda de status:
 ### Roadmap de Funcionalidades
 
 🔴 **Coleta de Dados**
-* Extração robusta de metadados (título, autor, ano, etc.) do Catálogo CAPES.
-* Download em lote dos PDFs de teses e dissertações.
 
 🔴 **Tratamento e Estruturação**
-* Extração de texto completo dos PDFs.
-* Limpeza, normalização de campos (datas, nomes) e checagem de integridade (duplicatas, nulos).
-* Geração de dicionário de dados e relatórios de qualidade.
+
 
 🔴 **Disponibilização e Acesso**
-* Disponibilização dos dados tratados (ex: Parquet, SQLite).
-* Notebooks (Jupyter/Colab) com exemplos de análise exploratória.
-* App Web (Streamlit/Dash) com dashboards e busca SQL customizada.
+
 
 🔴 **Enriquecimento Semântico (LLM)**
-* Geração de resumos automáticos (quando aplicável).
-* Classificação temática avançada.
-* Implementação de um chatbot experimental (Q&A via RAG) para consultar o *conteúdo* das teses.
+
 
 🔴 **Disseminação e Reuso**
-* Empacotamento das funções de coleta e tratamento no pacote PyPI `thesisbr`.
-* Documentação técnica completa e tutoriais.
+
 
 ---
 
